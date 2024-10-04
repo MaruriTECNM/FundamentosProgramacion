@@ -26,12 +26,12 @@ def primeNumber(prime):
             primedivisors.append(counter)       
     return primedivisors
 
-def main():
-    number=int(input("Ingresa un numero a evaluar: "))
-    if number<=0:
-        number=abs(number)
-    if primeCheck(number)==0:
-        print("El numero",number,"no es primo y sus divisores son: ",primeNumber(number))
-    else:
-        print("El numero",number,"es primo y sus divisores son: ",primeNumber(number))
-    os.system('pause')
+
+number=int(input("Ingresa un numero a evaluar: "))
+if number<=0:
+    number=abs(number)
+if primeCheck(number)==0:
+    print("El numero",number,"no es primo y sus divisores son: ",primeNumber(number))
+else:
+    print("El numero",number,"es primo y sus divisores son: ",primeNumber(number))
+os.system('pause')
